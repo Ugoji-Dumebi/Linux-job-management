@@ -100,8 +100,7 @@ Tools Used: sleep, tail, jobs, ps, kill
 Name: Chukwudumebi Ugoji
 Fellowship: Tech4Dev womentechsters – DevOps Track
 GitHub: @UgojiDumebi
-LinkedIn: linkedin.com/in/ugoji-dumebi
-
+LinkedIn: https://www.linkedin.com/in/chukwudumebi-ugoji/
 
 ---
 
