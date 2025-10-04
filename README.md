@@ -36,22 +36,27 @@ TAIL_PID=$!
 echo "Started tail -f /dev/null in background with PID $TAIL_PID"
 
 echo "LIST OF JOBS"
-jobs
+jobs # this shows the jobs and their IDs
 
 echo "LIST OF PROCESS"
-ps -ef
+ps -ef # this shows all running processess including the jobs just created
 
-echo "KILLING JOB 1 GRACEFULLY..."
+echo "bringing job to foreground"
+fg 1
+fg 2
+
+echo "bringing jobs back to backgound"
+bg 1 # this takes job back to background after suspending it with ctrl z
+bg 2
+
+echo "KILLING JOBs GRACEFULLY..."
 kill -15 %1
-ps -ef
-
-echo "KILLING JOB 2 GRACEFULLY..."
 kill -15 %2
-ps -ef
+ps -ef # to confirm jobs were killed sucessfully
+
 
 echo "ALL PROCESS SUCCESSFULLY COMPLETED..."
 
-Key Commands Explained
 
 Command	Description
 
